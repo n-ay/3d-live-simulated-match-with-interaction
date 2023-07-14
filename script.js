@@ -177,6 +177,7 @@ const fetchMatchData = () => {
 				const runs = `<p><span class="stat-label">Runs:</span> <span class="stat-value">${player.runs}</span></p>`;
 
 				playerStatsDiv.innerHTML = playerName + balls + runs;
+				playerStatsDiv.style.display = "block";
 
 				// const playerImage = `<img src="${player.playerImage}" alt="Player Image">`;
 				// const playerName = `<p><span class="stat-label">Name:</span> <span class="stat-value">${player.playerName}</span></p>`;
