@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>3D Live Simulated Match</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+		<link type="text/css" rel="stylesheet" href="main.css">
+		<link rel="icon" href="fanisko_logo.png" type="image/x-icon">
+	</head>
+	<body>
+
+		<div id="overlay">
+			<img id="logo" src="fanisko_logo.png" alt="Fanisko Logo">
+			<div id="top-buttons">
+			  <button id="country1-button" class="button">Country 1</button>
+			  <button id="country2-button" class="button">Country 2</button>
+			</div>
+
+			<div class="teamScoreContainer">
+				<div class="countryFlag">
+				  <div class="teamFlagContainer">
+					<img class="teamFlag" id="teamFlag" />
+				  </div>
+				  <div class="scoreWrapper">
+					<h1 class="teamScore" id="teamScore"></h1>
+					<p class="overs" id="overs"></p>
+				  </div>
+				</div>
+			  </div>
+
+			<div id="scroll-bar">
+			 
+			  <div class="player">
+				<img src="https://d1u2maujpzk42.cloudfront.net/icc-scores/players/61b9e7ac-ba12-4046-a096-85c61c4a97a4-thumb.png" alt="Player 1">
+				<div class="player-name">Player 1</div>
+			  </div>
+			  <div class="player">
+				<img src="https://d1u2maujpzk42.cloudfront.net/icc-scores/players/d5b66b5d-34ad-4f9f-bd7c-b4134cd2fbc6-thumb.png" alt="Player 2">
+				<div class="player-name">Player 2</div>
+			  </div>
+			  <div class="player">
+				<img src="fanisko_logo.png" alt="Player 1">
+				<div class="player-name">Player 1</div>
+			  </div>
+			  <div class="player">
+				<img src="fanisko_logo.png" alt="Player 2">
+				<div class="player-name">Player 2</div>
+			  </div>
+			  <div class="player">
+				<img src="fanisko_logo.png" alt="Player 1">
+				<div class="player-name">Player 1</div>
+			  </div>
+			  <div class="player">
+				<img src="fanisko_logo.png" alt="Player 2">
+				<div class="player-name">Player 2</div>
+			  </div>
+			  <div class="player">
+				<img src="fanisko_logo.png" alt="Player 1">
+				<div class="player-name">Player 1</div>
+			  </div>
+			  <div class="player">
+				<img src="fanisko_logo.png" alt="Player 2">
+				<div class="player-name">Player 2</div>
+			  </div>
+			 
+			</div>
+			<div id="playerStats" class="player-stats">
+				<!-- <div class="player-image">
+				  <!-- Player image will be dynamically updated here -->
+				</div> -->
+				<div class="player-info">
+				  <!-- Player stats will be dynamically updated here -->
+				</div>
+			  </div>
+			  
+			<button id="wagonwheel-button" class="button">Wagonwheel</button>
+			<button id="tap-to-place-button" class="button">Tap to Place</button>
+		  </div>
+
+		
+		<!-- Import maps polyfill -->
+		<!-- Remove this when import maps will be widely supported -->
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+		<script async src="https://unpkg.com/es-module-shims@1.6.3/dist/es-module-shims.js"></script>
+
+		<script type="importmap">
+			{
+				"imports": {
+					"three": "./build/three.module.js",
+					"three/addons/": "./jsm/"
+				}
+			}
+		</script>
+	
+		
+		<script type="module" src="script.js"></script>
+	</body>
+</html>
