@@ -15,7 +15,10 @@ let reticle, parent,textMesh;
 let hitTestSource = null;
 let hitTestSourceRequested = false;
 let currCountry;
-
+var playerSelected= false;
+var playerSelectedName="";
+var drawWagonWheelx;
+var drawWagonWheely;
 /*-----------------Loading Model-----------------------------------------*/	
 const loadGLTF = (path) => {
 	return new Promise((resolve, reject) => {
@@ -141,6 +144,7 @@ const fetchMatchData = () => {
 		  
 			// Populate the player list dynamically
 			playerData.forEach((player) => {
+				console.log("playerP", player);
 			  const playerElement = document.createElement("div");
 			  playerElement.classList.add("player");
 		  
@@ -179,6 +183,25 @@ const fetchMatchData = () => {
 				playerStatsDiv.innerHTML = playerName + balls + runs;
 				playerStatsDiv.style.display = "block";
 
+				playerSelected= true;
+				playerSelectedName = player.playerName;
+				drawWagonWheelx = player.drawWagonWheel1;
+				drawWagonWheely = player.drawWagonWheel2;
+
+				
+				
+					playerElement.addEventListener("click", function () {
+					
+				
+						// Dispatch a custom event indicating that a player is selected
+						const playerSelectedEvent = new CustomEvent('playerSelected', { detail: player });
+						window.dispatchEvent(playerSelectedEvent);
+					});
+				
+		
+		
+
+
 				// const playerImage = `<img src="${player.playerImage}" alt="Player Image">`;
 				// const playerName = `<p><span class="stat-label">Name:</span> <span class="stat-value">${player.playerName}</span></p>`;
 				// const balls = `<p><span class="stat-label">Balls:</span> <span class="stat-value">${player.balls}</span></p>`;
@@ -193,8 +216,6 @@ const fetchMatchData = () => {
 				// 	${runs}
 				//   </div>
 				// `;
-				
-
 
 			  });
 		   
@@ -217,6 +238,7 @@ const fetchMatchData = () => {
 	
 		  }
 		  
+
 
 
 
@@ -299,6 +321,23 @@ fetchMatchData(); // Fetch overall data
 const tapToPlaceButton = document.getElementById('tap-to-place-button');
 const wagonwheelButton = document.getElementById('wagonwheel-button');
 const overlay = document.getElementById('overlay');
+const buttons = document.querySelectorAll('.runBtn .rbutton');
+
+buttons.forEach(button => {
+  button.addEventListener('click', () => {
+    // Remove the 'active' class from all buttons
+    buttons.forEach(btn => btn.classList.remove('active'));
+
+    // Add the 'active' class to the clicked button
+    button.classList.add('active');
+  });
+});
+
+// var currentPlayer = document.querySelectorAll('.player.selected');
+// currentPlayer.addEventListener("click", (e) => {
+// 	console.log("playerclass11", e);
+// });
+// console.log("playerclass11", currentPlayer);
 
 /*------------------------------Buttons-------------------------------------*/
 
@@ -389,6 +428,7 @@ let model_rendered=false;
 
 /*--------------------------------Adding Wagon wheel------------------------------*/
 
+
 function drawWagonWheels(xVal, yVal, color) {
 
 	var numPoints = 100;
@@ -401,7 +441,7 @@ function drawWagonWheels(xVal, yVal, color) {
 	for (let i = 0; i <= 50; i++) {
 	  let p = new THREE.Vector3().lerpVectors(start, end, i / 50);
 	  if (color == "0XEB6363") {
-		p.y = p.y + 0.25 * Math.sin((Math.PI * i) / 50);
+		p.y = p.y + 0.25 * Math.sin((Math.PI * i) / 50); //six
 	  } else {
 		p.y = p.y + 0.01 * Math.sin((Math.PI * i) / 50);
 	  }
@@ -484,7 +524,7 @@ function getPosition(model,reticle)
 }
 
 
-
+console.log(playerSelected, playerSelectedName);
 /*---------------------------------INIT FUNCTION-------------------------------*/
 
 
@@ -562,21 +602,66 @@ function init() {
 		
 			model.name="stadium";
 			scene.add(model);
-			drawWagonWheels(0.2,0.8,"0XEB6363"); //red(6's)
-			drawWagonWheels(-0.15,0.25,"0xFEE88A"); //yellow(1/2's)
-			drawWagonWheels(-0.215,-0.15,"0xFEE88A"); //yellow(1/2's)
-			drawWagonWheels(0.25,0.3,"0xFEE88A"); //yellow(1/2's)
-			drawWagonWheels(-0.1,0.46,"0xFEE88A"); //yellow(1/2's)
-			drawWagonWheels(0.4,-0.1,"0xFEE88A"); //yellow(1/2's)
-			drawWagonWheels(-0.5,0.15,"0xFEE88A"); //yellow(1/2's)
-			drawWagonWheels(0.8,0.38,"0x8EB6F0"); // **blue(4's)
-			drawWagonWheels(-0.6,-0.6,"0XEB6363"); //red(6's)
-			drawWagonWheels(-0.68,0.8,"0x9EADC3");//blue(4's)
-			drawWagonWheels(-0.8,-0.18,"0x9EADC3");//blue(4's)
-			drawWagonWheels(0.7,0.7,"0XEB6363"); //red(6's)
-			drawWagonWheels(-0.85,0.85,"0XEB6363"); //red(6's)
-			drawWagonWheels(-0.48,0.48,"0x9EADC3");//blue(4's)
-			drawWagonWheels(0.4,-0.68,"0x9EADC3");//blue(4's)
+
+
+			// wagonwheelButton.addEventListener('click', function() {
+			// 	// Call drawWagonWheel() when the button is clicked
+			// 	drawWagonWheels(0.2, 0.8, '0XEB6363');
+			// 	drawWagonWheels(-0.15,0.25,"0xFEE88A"); //yellow(1/2's)
+			// 	drawWagonWheels(-0.215,-0.15,"0xFEE88A"); //yellow(1/2's)
+			// 	drawWagonWheels(0.25,0.3,"0xFEE88A"); //yellow(1/2's)
+			// 	drawWagonWheels(-0.1,0.46,"0xFEE88A"); //yellow(1/2's)
+			// 	drawWagonWheels(0.4,-0.1,"0xFEE88A"); //yellow(1/2's)
+			// 	drawWagonWheels(-0.5,0.15,"0xFEE88A"); //yellow(1/2's)
+			// 	drawWagonWheels(0.8,0.38,"0x8EB6F0"); // **blue(4's)
+			// 	drawWagonWheels(-0.6,-0.6,"0XEB6363"); //red(6's)
+			// 	drawWagonWheels(-0.68,0.8,"0x9EADC3");//blue(4's)
+			// 	drawWagonWheels(-0.8,-0.18,"0x9EADC3");//blue(4's)
+			// 	drawWagonWheels(0.7,0.7,"0XEB6363"); //red(6's)
+			// 	drawWagonWheels(-0.85,0.85,"0XEB6363"); //red(6's)
+			// 	drawWagonWheels(-0.48,0.48,"0x9EADC3");//blue(4's)
+			// 	drawWagonWheels(0.4,-0.68,"0x9EADC3");//blue(4's) 
+
+			//   });
+	
+	
+			window.addEventListener('playerSelected', function (event) {
+        
+				// console.log("Selected Player:", selectedPlayerData);
+			// Call drawWagonWheel() when the custom event is called
+						// drawWagonWheels(0.2, 0.8, '0XEB6363');
+						// drawWagonWheels(-0.15,0.25,"0xFEE88A"); //yellow(1/2's)
+						// drawWagonWheels(-0.215,-0.15,"0xFEE88A"); //yellow(1/2's)
+						// drawWagonWheels(0.25,0.3,"0xFEE88A"); //yellow(1/2's)
+						// drawWagonWheels(-0.1,0.46,"0xFEE88A"); //yellow(1/2's)
+						// drawWagonWheels(0.4,-0.1,"0xFEE88A"); //yellow(1/2's)
+						// drawWagonWheels(-0.5,0.15,"0xFEE88A"); //yellow(1/2's)
+						// drawWagonWheels(0.8,0.38,"0x8EB6F0"); // **blue(4's)
+						// drawWagonWheels(-0.6,-0.6,"0XEB6363"); //red(6's)
+						// drawWagonWheels(-0.68,0.8,"0x9EADC3");//blue(4's)
+						// drawWagonWheels(-0.8,-0.18,"0x9EADC3");//blue(4's)
+						// drawWagonWheels(0.7,0.7,"0XEB6363"); //red(6's)
+						drawWagonWheels(drawWagonWheelx,drawWagonWheely,"0XEB6363"); //red(6's)
+						drawWagonWheels(-0.48,0.48,"0x9EADC3");//blue(4's)
+						drawWagonWheels(0.4,-0.68,"0x9EADC3");//blue(4's) 
+		  
+			});
+				// drawWagonWheels(0.2, 0.8, '0XEB6363');
+				// drawWagonWheels(0.2,0.8,"0XEB6363"); //red(6's)
+				// drawWagonWheels(-0.15,0.25,"0xFEE88A"); //yellow(1/2's)
+				// drawWagonWheels(-0.215,-0.15,"0xFEE88A"); //yellow(1/2's)
+				// drawWagonWheels(0.25,0.3,"0xFEE88A"); //yellow(1/2's)
+				// drawWagonWheels(-0.1,0.46,"0xFEE88A"); //yellow(1/2's)
+				// drawWagonWheels(0.4,-0.1,"0xFEE88A"); //yellow(1/2's)
+				// drawWagonWheels(-0.5,0.15,"0xFEE88A"); //yellow(1/2's)
+				// drawWagonWheels(0.8,0.38,"0x8EB6F0"); // **blue(4's)
+				// drawWagonWheels(-0.6,-0.6,"0XEB6363"); //red(6's)
+				// drawWagonWheels(-0.68,0.8,"0x9EADC3");//blue(4's)
+				// drawWagonWheels(-0.8,-0.18,"0x9EADC3");//blue(4's)
+				// drawWagonWheels(0.7,0.7,"0XEB6363"); //red(6's)
+				// drawWagonWheels(-0.85,0.85,"0XEB6363"); //red(6's)
+				// drawWagonWheels(-0.48,0.48,"0x9EADC3");//blue(4's)
+				// drawWagonWheels(0.4,-0.68,"0x9EADC3");//blue(4's) 
 			//boundingBox(model);
 			model_rendered=true;
 			//const tapToPlaceButton = document.getElementById('tap-to-place-button');
@@ -618,6 +703,7 @@ function animate() {
 	renderer.setAnimationLoop( render );
 	requestAnimationFrame(animate);
 	controls.update();
+	// console.log(playerSelected, playerSelectedName);
 
 }
 
@@ -688,5 +774,7 @@ function render( timestamp, frame ) {
 	renderer.render( scene, camera );
 
 }
+
+
 init();
 animate();
