@@ -1,6 +1,6 @@
 # 3D simulated Live match in AR with interaction
 
-![XROS](./readme-images/xros.png)
+![XROS](https://xrosfellowship.ficci.in/assets/xr/logo.svg)
 
 ![Demo](./readme-images/watchparty.gif)
 
