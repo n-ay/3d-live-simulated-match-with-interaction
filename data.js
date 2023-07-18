@@ -26,8 +26,8 @@ const matchData = {
         threes: 0,
         fours: 0,
         sixes: 0,
-        drawWagonWheel1: 0.2,
-        drawWagonWheel2: 0.8
+        drawWagonWheel11: -0.2,
+        drawWagonWheel12: 0.15
       },
       {
         playerid: "d5b66b5d-34ad-4f9f-bd7c-b4134cd2fbc6",
@@ -41,8 +41,14 @@ const matchData = {
         threes: 0,
         fours: 2,
         sixes: 2,
-        drawWagonWheel1: -0.6,
-        drawWagonWheel2: 0.2
+        drawWagonWheel61: -0.6, //sixX
+        drawWagonWheel62: 0.8,  //sixY
+        drawWagonWheel41: 0.3,
+        drawWagonWheel42: -0.615,
+        drawWagonWheel21: 0.3,
+        drawWagonWheel22: -0.2,
+        drawWagonWheel11: 0.1,
+        drawWagonWheel12: -0.1
       },
       {
         playerid: "381c69a2-1583-4489-8cb9-98099b8f3333",
@@ -56,8 +62,8 @@ const matchData = {
         threes: 0,
         fours: 0,
         sixes: 0,
-        drawWagonWheel1: -0.215,
-        drawWagonWheel2: -0.15
+        drawWagonWheel11: -0.1,
+        drawWagonWheel12: -0.1,
       },
       {
         playerid: "2da295bf-0f22-4842-9903-e718899ef514",
@@ -71,8 +77,14 @@ const matchData = {
         threes: 1,
         fours: 10,
         sixes: 3,
-        drawWagonWheel1: -0.2,
-        drawWagonWheel2: 0.8
+        drawWagonWheel61: 0.92,
+        drawWagonWheel62: -0.78,
+        drawWagonWheel41: -0.43,
+        drawWagonWheel42: 0.65,
+        drawWagonWheel21: -0.3,
+        drawWagonWheel22: 0.2,
+        drawWagonWheel11: -0.1,
+        drawWagonWheel12: 0.3
       },
       {
         playerid: "572e1783-f5fe-4968-ac5b-517ca86a5f26",
@@ -86,8 +98,14 @@ const matchData = {
         threes: 1,
         fours: 10,
         sixes: 4,
-        drawWagonWheel1: 0.2,
-        drawWagonWheel2: -0.9
+        drawWagonWheel61: -0.79,
+        drawWagonWheel62: -0.68,
+        drawWagonWheel41: 0.23,
+        drawWagonWheel42: -0.95,
+        drawWagonWheel21: 0.43,
+        drawWagonWheel22: -0.32,
+        drawWagonWheel11: -0.11,
+        drawWagonWheel12: -0.31
       },
       {
         playerid: "2c3567bb-0147-4647-8a25-45fcbc970d2a",
@@ -101,8 +119,8 @@ const matchData = {
         threes: 0,
         fours: 2,
         sixes: 0,
-        drawWagonWheel1: -0.57,
-        drawWagonWheel2: -0.8
+        drawWagonWheel41: -0.57,
+        drawWagonWheel42: -0.8
       },
       {
         playerid: "3464224b-db80-4313-ae43-511f8e1634fe",
@@ -116,8 +134,8 @@ const matchData = {
         threes: 0,
         fours: 3,
         sixes: 1,
-        drawWagonWheel1: -0.28,
-        drawWagonWheel2: 0.20
+        drawWagonWheel61: -0.8,
+        drawWagonWheel62: 0.9
       },
       {
         playerid: "2b695088-ac78-4391-9e05-3f4f812343f3",
@@ -131,8 +149,8 @@ const matchData = {
         threes: 0,
         fours: 0,
         sixes: 0,
-        drawWagonWheel1: 0.1,
-        drawWagonWheel2: -0.9
+        drawWagonWheel11: 0.1,
+        drawWagonWheel12: -0.9
       },
       {
         playerid: "600d4722-124c-42ae-baf9-dfda3d4304d1",
@@ -146,8 +164,8 @@ const matchData = {
         threes: 0,
         fours: 0,
         sixes: 0,
-        drawWagonWheel1: -0.6,
-        drawWagonWheel2: -0.8
+        drawWagonWheel11: -0.2,
+        drawWagonWheel12: -0.12
       },
       {
         playerid: "f8ab0bae-9534-4f9a-8c6d-24832f0f37c6",
@@ -161,8 +179,8 @@ const matchData = {
         threes: 0,
         fours: 0,
         sixes: 0,
-        drawWagonWheel1: 0.9,
-        drawWagonWheel2: -0.2
+        drawWagonWheel11: 0.0,
+        drawWagonWheel12: -0.0
       },
       {
         playerid: "4682ea5a-7491-4f27-9f9a-c4fe0539e10d",
@@ -176,8 +194,8 @@ const matchData = {
         threes: 0,
         fours: 0,
         sixes: 0,
-        drawWagonWheel1: -0.5,
-        drawWagonWheel2: 0.8
+        drawWagonWheel11: -0.0,
+        drawWagonWheel12: 0.0
       }
     ],
     second_innings_players: [
@@ -193,8 +211,14 @@ const matchData = {
         threes: 0,
         fours: 1,
         sixes: 0,
-        drawWagonWheel1: -0.24,
-        drawWagonWheel2: -0.18
+        drawWagonWheel61: -0.72,
+        drawWagonWheel62: -0.82,
+        drawWagonWheel41: 0.39,
+        drawWagonWheel42: -0.56,
+        drawWagonWheel21: 0.65,
+        drawWagonWheel22: 0.22,
+        drawWagonWheel11: -0.15,
+        drawWagonWheel12: 0.33
       },
       {
         playerid: "78a7caf1-804f-47c1-bb32-e5ab17ef7a7c",
@@ -208,8 +232,14 @@ const matchData = {
         threes: 0,
         fours: 3,
         sixes: 0,
-        drawWagonWheel1: 0.2,
-        drawWagonWheel2: 0.8
+        drawWagonWheel61: 0.92,
+        drawWagonWheel62: -0.78,
+        drawWagonWheel41: -0.43,
+        drawWagonWheel42: 0.65,
+        drawWagonWheel21: -0.3,
+        drawWagonWheel22: 0.2,
+        drawWagonWheel11: -0.1,
+        drawWagonWheel12: 0.3
       },
       {
         playerid: "80b9ffe1-c7dd-44c1-892a-f4a824204c36",
@@ -223,8 +253,8 @@ const matchData = {
         threes: 0,
         fours: 0,
         sixes: 0,
-        drawWagonWheel1: 0.2,
-        drawWagonWheel2: 0.8
+        drawWagonWheel21: 0.2,
+        drawWagonWheel22: 0.8
       },
       {
         playerid: "2efc689f-b650-4a03-9c31-a69bb44f01ef",
@@ -237,7 +267,11 @@ const matchData = {
         twos: 1,
         threes: 2,
         fours: 3,
-        sixes: 0
+        sixes: 0,
+        drawWagonWheel41: -0.73,
+        drawWagonWheel42:  0.56,
+        drawWagonWheel21: -0.24,
+        drawWagonWheel22: -0.15,
       },
       {
         playerid: "d286686a-390b-4991-8e11-33843d35cffb",
@@ -251,8 +285,8 @@ const matchData = {
         threes: 0,
         fours: 0,
         sixes: 0,
-        drawWagonWheel1: 0.2,
-        drawWagonWheel2: 0.8
+        drawWagonWheel11: 0.2,
+        drawWagonWheel12: 0.8
       },
       {
         playerid: "7ec4b11b-caa6-4c53-ae16-b9433e394fc7",
@@ -266,8 +300,14 @@ const matchData = {
         threes: 2,
         fours: 4,
         sixes: 1,
-        drawWagonWheel1: 0.2,
-        drawWagonWheel2: 0.8
+        drawWagonWheel61: 0.5,
+        drawWagonWheel62: -0.8,
+        drawWagonWheel41: -0.3,
+        drawWagonWheel42: -0.5,
+        drawWagonWheel21: 0.4,
+        drawWagonWheel22: -0.5,
+        drawWagonWheel11: 0.2,
+        drawWagonWheel12: -0.2
       },
       {
         playerid: "4ab32735-9b80-4669-9be2-f7836dae04cc",
@@ -281,8 +321,8 @@ const matchData = {
         threes: 0,
         fours: 2,
         sixes: 1,
-        drawWagonWheel1: 0.2,
-        drawWagonWheel2: 0.8
+        drawWagonWheel61: 0.4,
+        drawWagonWheel62: -0.7
       },
       {
         playerid: "9edbe632-655e-40ed-b069-9994e4475ff8",
@@ -296,8 +336,8 @@ const matchData = {
         threes: 0,
         fours: 5,
         sixes: 1,
-        drawWagonWheel1: 0.2,
-        drawWagonWheel2: 0.8
+        drawWagonWheel41: -0.5,
+        drawWagonWheel42: 0.7
       },
       {
         playerid: "0d08c265-daee-4fd4-86b2-2974c94df45a",
@@ -311,8 +351,8 @@ const matchData = {
         threes: 0,
         fours: 2,
         sixes: 1,
-        drawWagonWheel1: 0.2,
-        drawWagonWheel2: 0.8
+        drawWagonWheel21:  0.2,
+        drawWagonWheel22: -0.2
       },
       {
         playerid: "85c6ad26-42c7-479e-96da-6d3d09643e60",
@@ -326,8 +366,8 @@ const matchData = {
         threes: 0,
         fours: 0,
         sixes: 0,
-        drawWagonWheel1: 0.2,
-        drawWagonWheel2: 0.8
+        drawWagonWheel11: -0.1,
+        drawWagonWheel12: 0.21
       },
       {
         playerid: "47c7a4b0-3ce6-4b1e-a44e-6c8ed57139f3",
@@ -341,8 +381,8 @@ const matchData = {
         threes: 0,
         fours: 2,
         sixes: 0,
-        drawWagonWheel1: 0.2,
-        drawWagonWheel2: 0.8
+        drawWagonWheel41: 0.6,
+        drawWagonWheel42: 0.3
       }
     ]
   };
@@ -365,8 +405,14 @@ const matchData = {
       threes,
       fours,
       sixes,
-      drawWagonWheel1,
-      drawWagonWheel2
+      drawWagonWheel61,
+      drawWagonWheel62,
+      drawWagonWheel41,
+      drawWagonWheel42,
+      drawWagonWheel21,
+      drawWagonWheel22,
+      drawWagonWheel11,
+      drawWagonWheel12
     } = player;
     playerDetail1.push({
       playerId: playerid,
@@ -380,8 +426,14 @@ const matchData = {
       threes,
       fours,
       sixes,
-      drawWagonWheel1,
-      drawWagonWheel2
+      drawWagonWheel61,
+      drawWagonWheel62,
+      drawWagonWheel41,
+      drawWagonWheel42,
+      drawWagonWheel21,
+      drawWagonWheel22,
+      drawWagonWheel11,
+      drawWagonWheel12
     });
   }
   
@@ -400,8 +452,14 @@ const matchData = {
       threes,
       fours,
       sixes,
-      drawWagonWheel1,
-      drawWagonWheel2
+      drawWagonWheel61,
+      drawWagonWheel62,
+      drawWagonWheel41,
+      drawWagonWheel42,
+      drawWagonWheel21,
+      drawWagonWheel22,
+      drawWagonWheel11,
+      drawWagonWheel12
     } = player;
     playerDetail2.push({
       playerId: playerid,
@@ -415,8 +473,14 @@ const matchData = {
       threes,
       fours,
       sixes,
-      drawWagonWheel1,
-      drawWagonWheel2
+      drawWagonWheel61,
+      drawWagonWheel62,
+      drawWagonWheel41,
+      drawWagonWheel42,
+      drawWagonWheel21,
+      drawWagonWheel22,
+      drawWagonWheel11,
+      drawWagonWheel12
     });
   }
   
