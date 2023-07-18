@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
 #overlay {
   position: fixed;
   top: 0;
@@ -35,16 +37,19 @@
   cursor: pointer;
   border-radius: 4px;
   margin-left: 10px;
+  font-family: 'Poppins', sans-serif;
 }
 
 #country1-button {
   background-color: #e91e63;
   color: white;
+  font-family: 'Poppins', sans-serif;
 }
 
 #country2-button {
   background-color: #e91e63;
   color: white;
+  font-family: 'Poppins', sans-serif;
 }
 
 #country1-button.active,
@@ -76,22 +81,32 @@
 }
 
 .player-name {
-  font-weight: bold;
+  font-weight: 500;
   font-size: 12px;
   margin-top: 5px;
-  color: white;
+  color: whitesmoke;
+  font-family: 'Poppins', sans-serif;
 }
 
 .player.selected {
-  background-color: #FF5722;
-  border-radius: 40%;
-  color: white;
+  border-radius: 10px;
+  border: 1px solid white;
+  color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  font-weight: 600 !important;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
 }
+
 .teamScoreContainer {
   float: none;
   width: 107px;
   margin: 0 auto;
   margin-top: 10px;
+  font-family: 'Poppins', sans-serif;
 }
 
 .teamFlagContainer {
@@ -117,6 +132,7 @@
   font-size: 15px;
   color: white;
   text-align: center;
+  font-family: 'Poppins', sans-serif;
 }
 .scoreWrapper p {
   margin: 0;
@@ -125,6 +141,7 @@
   background-color: #FF5722;
   /* width:50%; */
   text-align: center;
+  font-family: 'Poppins', sans-serif;
 }
 
 .player-stats {
@@ -136,7 +153,7 @@
   color: #ffffff;
   padding: 20px;
   border-radius: 5px;
-  font-family: Arial, sans-serif;
+  font-family: 'Poppins', sans-serif;
   text-align: center;
   display: none;
 }
@@ -183,6 +200,7 @@
   position: absolute;
   bottom: 20px;
   left: 20px;
+  font-family: 'Poppins', sans-serif;
 }
 
 #tap-to-place-button {
@@ -192,4 +210,98 @@
   bottom: 200px;
   left: 140px;
   visibility: block;
+  font-family: 'Poppins', sans-serif;
 }
+
+.runBtn {
+  color: white;
+  position: absolute;
+  bottom: 100px;
+  left: 12%;
+  visibility: block;
+  padding: 10px;
+  
+}
+
+.rbutton{
+  color: #2196F3;
+  visibility: block;
+  display: inline;
+  padding: 8px 16px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  margin: 5px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid #2196F3;
+  font-family: 'Poppins', sans-serif;
+}
+
+.runBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 6%;
+  
+}
+
+
+
+.runBtn .rbutton.active {
+  border: 1px solid #2196F3;
+  font: 18px Arial;
+  color: whitesmoke;
+  background-color: #2196F3;
+  font-weight: bold;
+  /* backdrop-filter: blur(10px); */
+}
+
+#ARButton {
+  border: 2px solid #2196F3 !important;
+  color: #2196F3 !important;
+  font: 14px Arial !important;
+  font-weight: 600 !important;
+  opacity: none !important;
+  background: none !important;
+}
+
+/* 
+.rbutton{
+  color: #2196F3;
+  visibility: block;
+  display: inline;
+  padding: 8px 16px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  margin: 5px;
+  background-color: none;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid #2196F3;
+}
+
+.runBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 6%;
+  
+}
+
+
+
+.runBtn .rbutton.active {
+  border: 1px solid #2196F3;
+  font: 18px Arial;
+  color: whitesmoke;
+  background-color: #2196F3;
+  font-weight: bold;
+} */
