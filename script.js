@@ -6,7 +6,7 @@ import { TextGeometry } from 'three/addons/geometries/TextGeometry.js';
 import { FontLoader } from 'three/addons/loaders/FontLoader.js';
 import { playerDetail1, playerDetail2 } from "./data.js";
 
-
+let runStore = [];
 let container;
 let camera, scene, renderer;
 let controller;
@@ -17,8 +17,14 @@ let hitTestSourceRequested = false;
 let currCountry;
 var playerSelected= false;
 var playerSelectedName="";
-var drawWagonWheelx;
-var drawWagonWheely;
+var drawWagonWheel6x;
+var drawWagonWheel6y;
+var drawWagonWheel4x;
+var drawWagonWheel4y;
+var drawWagonWheel2x;
+var drawWagonWheel2y;
+var drawWagonWheel1x;
+var drawWagonWheel1y;
 /*-----------------Loading Model-----------------------------------------*/	
 const loadGLTF = (path) => {
 	return new Promise((resolve, reject) => {
@@ -185,8 +191,14 @@ const fetchMatchData = () => {
 
 				playerSelected= true;
 				playerSelectedName = player.playerName;
-				drawWagonWheelx = player.drawWagonWheel1;
-				drawWagonWheely = player.drawWagonWheel2;
+				drawWagonWheel6x = player.drawWagonWheel61;
+				drawWagonWheel6y = player.drawWagonWheel62;
+				drawWagonWheel4x = player.drawWagonWheel41;
+				drawWagonWheel4y = player.drawWagonWheel42;
+				drawWagonWheel2x = player.drawWagonWheel21;
+				drawWagonWheel2y = player.drawWagonWheel22;
+				drawWagonWheel1x = player.drawWagonWheel11;
+				drawWagonWheel1y = player.drawWagonWheel12;
 
 				
 				
@@ -469,7 +481,7 @@ function drawWagonWheels(xVal, yVal, color) {
 
 	const stadium = scene.getObjectByName("stadium");
 	stadium.add(mesh); //tubes are made children to stadium here.
-	//_runStore.push(mesh); //1,2,3,4,6 buttons, used in displaylines
+	runStore.push(mesh); //1,2,3,4,6 buttons, used in displaylines
 	stadium.receiveShadow = true; //shadow
 }
 
@@ -623,10 +635,18 @@ function init() {
 			// 	drawWagonWheels(0.4,-0.68,"0x9EADC3");//blue(4's) 
 
 			//   });
+			// if (runStore.length!=0) {
+			// 	runStore.forEach(mesh => {
+			// 		mesh.visible = false;
+			// 		scene.remove(mesh);
+			// 	  });
+			// }
+			// console.log("runstore",runStore);
 	
-	
+			
 			window.addEventListener('playerSelected', function (event) {
         
+
 				// console.log("Selected Player:", selectedPlayerData);
 			// Call drawWagonWheel() when the custom event is called
 						// drawWagonWheels(0.2, 0.8, '0XEB6363');
@@ -641,9 +661,18 @@ function init() {
 						// drawWagonWheels(-0.68,0.8,"0x9EADC3");//blue(4's)
 						// drawWagonWheels(-0.8,-0.18,"0x9EADC3");//blue(4's)
 						// drawWagonWheels(0.7,0.7,"0XEB6363"); //red(6's)
-						drawWagonWheels(drawWagonWheelx,drawWagonWheely,"0XEB6363"); //red(6's)
-						drawWagonWheels(-0.48,0.48,"0x9EADC3");//blue(4's)
-						drawWagonWheels(0.4,-0.68,"0x9EADC3");//blue(4's) 
+						drawWagonWheels(drawWagonWheel6x,drawWagonWheel6y,"0XEB6363"); //red(6's)
+						drawWagonWheels(drawWagonWheel4x,drawWagonWheel4y,"0x9EADC3");//blue(4's)
+						drawWagonWheels(drawWagonWheel2x,drawWagonWheel2y,"0xFEE88A");//yellow(2/3's)) 
+						drawWagonWheels(drawWagonWheel1x,drawWagonWheel1y,"0xFFFFFF"); //White(1's)
+						// if (runStore.length!=0) {
+						// 	runStore.forEach(mesh => {
+						// 		mesh.visible = false;
+						// 		scene.remove(mesh);
+						// 	  });
+						// }
+						// console.log("runstore",runStore);
+						// runStore=[];
 		  
 			});
 				// drawWagonWheels(0.2, 0.8, '0XEB6363');
