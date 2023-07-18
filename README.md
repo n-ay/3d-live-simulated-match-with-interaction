@@ -51,7 +51,7 @@
 
 ## 1. Introduction
 
-![Fanisko-AR](./readme-images/fanisko-r1.png)
+![Fanisko-AR](./readme-img/faniskoAR.png)
 
 Fanisko Watchparty AR - Open Source Project
 Fanisko Watchparty AR is an open-source project aimed at creating a meeting platform with augmented reality (AR) features such as face filters and games. It provides users with online meeting options including chat, video call, voice call, file sharing, YouTube video streaming, screen sharing, and more. The project leverages web technologies such as React.js, Three.js, MindAR, Zappar, Face-api.js, A-Frame, VanillaJS, WebRTC, WebSockets, TypeScript, and Babel.
