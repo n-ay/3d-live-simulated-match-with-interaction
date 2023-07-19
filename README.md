@@ -16,31 +16,19 @@
 3. [Setting Up the Project](#3-setting-up-the-project)
    - [System Requirements](#system-requirements)
    - [Installation Instructions](#installation-instructions)
-   - [Configuration Steps](#configuration-steps)
    - [Dependencies and Libraries Used](#dependencies-and-libraries-used)
-4. [Creating AR Filters](#4-creating-ar-filters)
-   - [Overview of AR Filter Development](#overview-of-ar-filter-development)
-   - [Initial Approach: MindAR](#initial-approach-mindar)
-     - [Pros and Cons](#pros-and-cons)
-     - [Challenges Faced](#challenges-faced)
-   - [Transition to Custom AR Solution](#transition-to-custom-ar-solution)
-     - [Introduction to Face-api.js and HTML Canvas](#introduction-to-face-apijs-and-html-canvas)
-     - [Leveraging Machine Learning with Face-api.js](#leveraging-machine-learning-with-face-apijs)
-     - [Applying Filters on Detected Faces](#applying-filters-on-detected-faces)
-5. [WebRTC Integration and Streaming](#5-webrtc-integration-and-streaming)
-   - [Understanding WebRTC](#understanding-webrtc)
-   - [Real-time Communication with WebRTC](#real-time-communication-with-webrtc)
-6. [Key Features and Functionality](#6-key-features-and-functionality)
+
+4. [Key Features and Functionality](#6-key-features-and-functionality)
 
    - [Enhancing the Live Streaming Experience](#enhancing-the-live-streaming-experience)
    - [User Engagement and Interaction](#user-engagement-and-interaction)
 
-7. [Current Project Stage and Known Issues](#7-current-project-stage-and-known-issues)
+5. [Current Project Stage and Known Issues](#7-current-project-stage-and-known-issues)
    - [Summary of the Current Project Stage](#summary-of-the-current-project-stage)
    - [Evaluation of Project Progress](#evaluation-of-project-progress)
    - [Identified Issues and Limitations](#identified-issues-and-limitations)
    - [Proposed Solutions and Future Improvements](#proposed-solutions-and-future-improvements)
-8. [Conclusion](#8-conclusion)
+6. [Conclusion](#8-conclusion)
 
 ---
 
@@ -133,13 +121,13 @@ Please note that these are the recommended system requirements. The project may 
 
 
 
-## 6. Key Features and Functionality
+## 4. Key Features and Functionality
 
 #### Enhancing the Live User Experience
 
 #### User Engagement and Interaction
 
-## 7. Current Project Stage and Known Issues
+## 5. Current Project Stage and Known Issues
 
 ### Summary of the Current Project Stage
 
@@ -155,7 +143,7 @@ Overall, the project is in an advanced stage, with the core functionalities impl
 
 To address the identified issues and limitations, proposed solutions and future improvements have been outlined. These include optimizing AR Hit-test performance, improving compatibility across different platforms, and enhancing the stability and scalability of the AR functionality. Additionally, continuous testing, user feedback, and iterative development will be key to refining the project further.
 
-## 8. Conclusion
+## 6. Conclusion
 
 ### Creators
 
