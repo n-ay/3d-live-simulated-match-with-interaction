@@ -20,7 +20,7 @@
 
 4. [Key Features and Functionality](#6-key-features-and-functionality)
 
-   - [Enhancing the Live Match Experience](#enhancing-the-live-streaming-experience)
+   - [Enhancing the Live Match Experience](#enhancing-the-live-match-experience)
    - [User Engagement and Interaction](#user-engagement-and-interaction)
 
 5. [Current Project Stage and Known Issues](#7-current-project-stage-and-known-issues)
