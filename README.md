@@ -85,7 +85,7 @@ The research and planning phase provided a solid foundation for the subsequent s
 <img src="https://img.shields.io/badge/Unity-FFFFFF.svg?style=for-the-badge&logo=Unity&logoColor=black">
 </a> -->
 <a href="https://immersiveweb.dev/ " target="_blank" rel="noreferrer">
-<img src="https://earthday.deimosindustries.com/assets/images/webxr-logo.svg" width="8%">
+<img src="https://earthday.deimosindustries.com/assets/images/webxr-logo.svg" width="10%">
 </a>
 </p>
 
