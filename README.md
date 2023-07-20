@@ -59,13 +59,13 @@ The research and planning phase played a crucial role in shaping the direction a
 | Bug Fixing              | 2022-06-15 |
 | UI Improvements         | 2022-07-01 |
 
-During the research kick-off, the project team gathered to discuss the objectives and scope of the project. The primary focus was on understanding the capabilities and limitations of existing AR platforms and identifying the most suitable options for integrating AR into the watch party platform.
+During the research kick-off, the project team gathered to discuss the objectives and scope of the project. The primary focus was on understanding the capabilities and limitations of existing AR platforms and identifying the most suitable options for integrating AR with live datafeed.
 
 The subsequent milestone involved an in-depth analysis of various AR platforms available in the market. Factors such as ease of integration, performance, and community support were considered during the evaluation process. This research helped the team make an informed decision regarding the selection of the WebXR for the project.
 
 Simultaneously, research was conducted on data fetching technologies to identify the best approach for real-time data fetching through live APIs. Different methods, including Axios and Node based, were studied, and their suitability for live data fetching applications was assessed. This research helped the team gain a deeper understanding of the technical requirements and challenges associated with streaming in the context of the AR project.
 
-Following the research phase, planning and strategy development commenced. The team analyzed the gathered insights, identified project requirements, and formulated a roadmap for the development process. The planning phase involved setting project milestones, allocating resources, and outlining the steps needed to bring the Fanisko Watchparty AR project to fruition.
+Following the research phase, planning and strategy development commenced. The team analyzed the gathered insights, identified project requirements, and formulated a roadmap for the development process. The planning phase involved setting project milestones, allocating resources, and outlining the steps needed to bring the AR project to fruition.
 
 The research and planning phase provided a solid foundation for the subsequent stages of the project, guiding the technology stack selection, development approach, and implementation strategies. The insights gained during this phase were instrumental in ensuring the successful integration of augmented reality, data fetching capabilities, and real-time data viualisation on AR platform.
 
@@ -84,8 +84,8 @@ The research and planning phase provided a solid foundation for the subsequent s
 <!-- <a href="https://unity.com/" target="_blank" rel="noreferrer">
 <img src="https://img.shields.io/badge/Unity-FFFFFF.svg?style=for-the-badge&logo=Unity&logoColor=black">
 </a> -->
-<a href="https://aframe.io/ " target="_blank" rel="noreferrer">
-<img src="https://img.shields.io/badge/AFrame-EF2D5E.svg?style=for-the-badge&logo=A-Frame&logoColor=white">
+<a href="https://immersiveweb.dev/ " target="_blank" rel="noreferrer">
+<img src="https://earthday.deimosindustries.com/assets/images/webxr-logo.svg" width="8%">
 </a>
 </p>
 
@@ -94,7 +94,7 @@ The research and planning phase provided a solid foundation for the subsequent s
 
 ### System Requirements
 
-To set up the Fanisko Watchparty AR project, ensure that your system meets the following requirements:
+<a href="https://3d-live-simulated-match-with-interaction.vercel.app/">3D Simulated Live Match in AR with Interaction</a> is a web-based AR experience that can be used through mobile devices. In order to run the AR experience, ensure that your system meets the following requirements:
 
 - **Operating System:** AndroidOS, iOS(Safari Beta)[Will be accessible to all iOS devices from iOS16]
 - **Processor:** Snapdragon 685 or above preffered
@@ -149,8 +149,8 @@ To address the identified issues and limitations, proposed solutions and future 
 
 The "3D simulated Live match in AR with interaction" project was created by:
 
-- <a href="https://github.com/n-ay"> Ayesha </a>
-- <a href="https://github.com/Vasu1712"> Vasu </a>
+- <p href="https://github.com/n-ay"> Ayesha </p>
+- <p href="https://github.com/Vasu1712"> Vasu </p>
 
 ### Project Mentor
 
