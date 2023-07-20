@@ -149,8 +149,8 @@ To address the identified issues and limitations, proposed solutions and future 
 
 The "3D simulated Live match in AR with interaction" project was created by:
 
-- <p href="https://github.com/n-ay"> Ayesha </p>
-- <p href="https://github.com/Vasu1712"> Vasu </p>
+- <a href="https://github.com/n-ay"> Ayesha </a>
+- <a href="https://github.com/Vasu1712"> Vasu </a>
 
 ### Project Mentor
 
