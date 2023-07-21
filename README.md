@@ -2,7 +2,10 @@
 
 ![XROS](./readme-img/banner.png)
 
+<div align="center">
 <center><img src="./readme-img/readmeGif.gif"></center>
+   <h3 align="center">A Demo of our project: 3D Simulated Live Match in AR with Interaction</h3>
+</div>
 
 ## Table of Contents
 
@@ -112,12 +115,12 @@ Please note that these are the recommended system requirements. The project may 
 
 | Dependency/Library | Purpose                                            |
 | ------------------ | -------------------------------------------------- |
-| HTML               | For building user interfaces                       |
+| HTML, CSS          | For building user interfaces                       |
 | Three.js           | JavaScript 3D library for rendering 3D graphics    |
-| Zappar             | AR development platform                            |
+| WebXR              | For AR development on the Web                      |
 | A-Frame            | Web framework for building virtual reality (VR)    |
-| VanillaJS          | JavaScript framework for client-side development   |
-| TypeScript         | Typed superset of JavaScript for improved IDE      |
+| HitTest API        | JavaScript framework for client-side development   |
+| JavaScript         | For fetching live data and integrating UI          |
 
 
 
@@ -149,8 +152,8 @@ To address the identified issues and limitations, proposed solutions and future 
 
 The "3D simulated Live match in AR with interaction" project was created by:
 
-- <p href="https://github.com/n-ay"> Ayesha </p>
-- <p href="https://github.com/Vasu1712"> Vasu </p>
+- <p href="https://github.com/n-ay"> Ayesha Nasim</p>
+- <p href="https://github.com/Vasu1712"> Vasu Pal</p>
 
 ### Project Mentor
 
